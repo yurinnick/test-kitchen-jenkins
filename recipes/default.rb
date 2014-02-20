@@ -1,3 +1,4 @@
+package "curl"
 package "mc"
 if node['platform'] == "ubuntu" && node['platform_version'].to_f <= 10.04
   package "git-core"
