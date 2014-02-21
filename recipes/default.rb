@@ -4,4 +4,3 @@ else
   package "git"
 end
 
-log "Well, that was too easy"
