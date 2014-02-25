@@ -3,3 +3,4 @@ if node['platform'] == "ubuntu" && node['platform_version'].to_f <= 10.04
 else
   package "git"
 end
+log "Hello"
