@@ -1,0 +1,11 @@
+#!/bin/sh
+#curl http:// localhost:8080/git/notifyCommit?url=ssh://olzyuzin@localhost/home/olzyuzin/Documents/git_repo.git
+bra=$(git rev-parse --symbolic --abbrev-ref $1)
+echo Update pushed to branch $bra >> /dev/null
+#exec git update-server-info
+echo Update pushed to repo
+branch_list=""
+delim=""
+
+curl -s http://localhost:8080/git/notifyCommit?url=ssh://olzyuzin@localhost/home/olzyuzin/Documents/git_repo.git >> /dev/null
+
